@@ -7,14 +7,14 @@ public class SumaArreglo {
         int sum[] = new int[20];
         int suma = 0, rand;
         
-        for (int count = 0; count < 20; count++)
+        for (int count = 0; count < sum.length; count++)
         {
             rand = (int) (Math.random() * (100) + 1); // Generar números aleatorios entre 1 y 100, incluyendolos.
             sum[count] = rand;
             suma += sum[count];
         }
 
-        for (int count = 0; count < 20; count++) // Ciclo for para imprimir elementos dentro del arreglo.
+        for (int count = 0; count < sum.length; count++) // Ciclo for para imprimir elementos dentro del arreglo.
         {
             System.out.println(sum[count]);
         }
