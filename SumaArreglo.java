@@ -10,9 +10,13 @@ public class SumaArreglo {
         for (int count = 0; count < 20; count++)
         {
             rand = (int) (Math.random() * (100) + 1); // Generar números aleatorios entre 1 y 100, incluyendolos.
-            System.out.println(rand); // Imprimir números generados.
             sum[count] = rand;
             suma += sum[count];
+        }
+
+        for (int count = 0; count < 20; count++) // Ciclo for para imprimir elementos dentro del arreglo.
+        {
+            System.out.println(sum[count]);
         }
         
         System.out.println("La suma de los elementos del arreglo es: " + suma); //Imprimir suma total.
